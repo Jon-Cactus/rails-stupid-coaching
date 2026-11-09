@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <div class="card bg-primary text-white rounded-3 mb-3">
+        <div class="card-body p-4">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p class="pb-2">
+                <%= @question %>
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              You
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="card bg-success text-white rounded-3 mb-3">
+        <div class="card-body p-4">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p class="pb-2">
+                <%= @answer %>
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Your Coach
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= link_to "Ask another question", ask_path %>
